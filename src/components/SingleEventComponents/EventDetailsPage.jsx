@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import dateFormat from "dateformat";
+import { Helmet } from "react-helmet";
 
 import { fetchPublicEventDetails } from "../../services/eventsService";
 
@@ -25,6 +26,29 @@ const EventsDetailPage = () => {
     const { name, image, description, date, tags, link } = event;
     return (
       <div>
+        <Helmet
+          title={name}
+          meta={[
+            { name: "author", content: "webosium" },
+
+            { name: "twitter:site", content: "webosium" },
+            { name: "twitter:creator", content: "webosium" },
+            { name: "twitter:title", content: name },
+            { name: "twitter:image", content: image },
+
+            { property: "og:title", content: name },
+            { property: "og:site_name", content: "webosium" },
+            { property: "og:type", content: "website" },
+            {
+              property: "og:url",
+              content: "https://webosium.xyz/event/" + id,
+            },
+            { property: "og:description", content: description },
+            { property: "og:image", content: image },
+            { property: "og:site_name", content: "webosium" },
+          ]}
+        />
+
         <h1 className="flex items-center">
           <p className="text-3xl capitalize">{name} </p>
           <div className="hidden md:block mx-2">

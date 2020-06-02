@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 import { useStoreActions, useStoreState } from "easy-peasy";
 import { fetchPublicEvents } from "../../services/eventsService";
@@ -24,6 +25,20 @@ const HomePage = () => {
 
   return (
     <React.Fragment>
+      <Helmet
+        title={"Webosium - Symposium on the web"}
+        meta={[
+          { name: "author", content: "webosium" },
+
+          { name: "twitter:site", content: "webosium" },
+          { name: "twitter:creator", content: "webosium" },
+
+          { property: "og:site_name", content: "webosium" },
+          { property: "og:type", content: "website" },
+
+          { property: "og:site_name", content: "webosium" },
+        ]}
+      />
       <UpcomingEvents />
       <PastEvents />
     </React.Fragment>
