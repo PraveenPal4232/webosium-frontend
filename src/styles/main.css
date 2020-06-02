@@ -472,10 +472,28 @@ img {
   background-color: rgba(203, 213, 224, var(--bg-opacity));
 }
 
+.bg-red-200 {
+  --bg-opacity: 1;
+  background-color: #fed7d7;
+  background-color: rgba(254, 215, 215, var(--bg-opacity));
+}
+
+.bg-green-200 {
+  --bg-opacity: 1;
+  background-color: #c6f6d5;
+  background-color: rgba(198, 246, 213, var(--bg-opacity));
+}
+
 .bg-teal-500 {
   --bg-opacity: 1;
   background-color: #38b2ac;
   background-color: rgba(56, 178, 172, var(--bg-opacity));
+}
+
+.bg-blue-200 {
+  --bg-opacity: 1;
+  background-color: #bee3f8;
+  background-color: rgba(190, 227, 248, var(--bg-opacity));
 }
 
 .bg-blue-500 {

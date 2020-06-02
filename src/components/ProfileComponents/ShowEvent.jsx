@@ -4,13 +4,13 @@ import dateFormat from "dateformat";
 const ShowEvents = (props) => {
   return (
     <div
-      className={`bg-${
+      className={`${
         props.query === "pending"
-          ? "blue"
+          ? "bg-blue-200"
           : props.query === "rejected"
-          ? "red"
-          : "gray"
-      }-200 rounded-md w-full max-w-lg mt-4 p-4`}
+          ? "bg-red-200"
+          : "bg-green-200"
+      } rounded-md w-full max-w-lg mt-4 p-4`}
     >
       <h1 className="text-lg">{props.name}</h1>
       <h3 className="text-gray-600">
