@@ -69,6 +69,9 @@ const CreateTopicForm = () => {
                 community guidelines
               </Link>
             </p>
+            <p className="text-gray-600 text-xs italic">
+              * Please dont create unneccesary tags
+            </p>
           </div>
         </div>
       </form>

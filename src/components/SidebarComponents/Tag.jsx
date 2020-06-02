@@ -9,7 +9,7 @@ const Tag = (props) => {
         search: `?tags=${props.name}`,
       }}
     >
-      <h3 className="text-gray-500 hover:text-black truncate uppercase">{props.name}</h3>
+      <h3 className="text-gray-500 hover:text-black truncate capitalize">{props.name}</h3>
     </Link>
   );
 };

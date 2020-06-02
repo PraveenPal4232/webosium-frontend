@@ -27,9 +27,19 @@ const TagList = () => {
         Topics
       </h5>
       {topics.length === 0 ? "No Topics" : null}
-      {topics.map((topic, index) => {
-        return <Tag name={topic.name} key={index} />;
-      })}
+      {topics
+        .sort(function (a, b) {
+          if (a.name.toLowerCase() < b.name.toLowerCase()) {
+            return -1;
+          }
+          if (a.name.toLowerCase() > b.name.toLowerCase()) {
+            return 1;
+          }
+          return 0;
+        })
+        .map((topic, index) => {
+          return <Tag name={topic.name} key={index} />;
+        })}
     </div>
   );
 };
