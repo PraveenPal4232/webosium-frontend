@@ -11,7 +11,7 @@ const EventSmallCard = (props) => {
     <Link className="p-1" to={`/event/${id}`}>
       <div className="border-b border-gray-400 md:border-none bg-gray-400 hover:bg-blue-400 h-full">
         <div className="px-4 py-3 md:py-6 md:px-4">
-          <div className="font-medium text-xl mb-2">{name}</div>
+          <div className="font-medium text-xl mb-2 capitalize">{name}</div>
           <p className="text-gray-700 text-base">
             <span className="font-medium">Date: </span>
             {dateFormat(date, "ddd, mmm d, yyyy, h:MM TT")} {timezone}

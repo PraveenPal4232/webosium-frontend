@@ -26,7 +26,7 @@ const EventsDetailPage = () => {
     return (
       <div>
         <h1 className="flex items-center">
-          <p className="text-3xl">{name} </p>
+          <p className="text-3xl capitalize">{name} </p>
           <div className="hidden md:block mx-2">
             <a href={link} target="_blank" rel="noopener noreferrer">
               <button className="bg-blue-700 hover:bg-blue-500 text-white rounded-full px-4 py-1 w-full">

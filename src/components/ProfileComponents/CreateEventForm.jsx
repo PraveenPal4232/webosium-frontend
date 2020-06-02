@@ -100,7 +100,7 @@ const CreateEventForm = () => {
               className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
               type="text"
               placeholder="Webinar on Tensorflow"
-              onChange={(e) => setEventName(e.target.value)}
+              onChange={(e) => setEventName(e.target.value.trim())}
             />
           </div>
 
@@ -151,19 +151,19 @@ const CreateEventForm = () => {
             </select>
           </div>
 
-          <div className="w-full px-3 md:w-1/2 ">
+          <div className="w-full px-3 md:w-8/12 ">
             <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
               Date and time
             </label>
             <input
               className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
               type="datetime-local"
-              placeholder="Link to YouTube/Zoom etc"
+              placeholder="Add event date and time"
               onChange={(e) => setDate(e.target.value)}
             />
           </div>
 
-          <div className="w-full px-3 md:w-1/2 ">
+          <div className="w-full px-3 md:w-4/12 ">
             <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
               Timezone
             </label>
@@ -187,7 +187,7 @@ const CreateEventForm = () => {
             <textarea
               className="appearance-none md:h-48 block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
               placeholder="some details about your event"
-              onChange={(e) => setDescription(e.target.value)}
+              onChange={(e) => setDescription(e.target.value.trim())}
             />
           </div>
 

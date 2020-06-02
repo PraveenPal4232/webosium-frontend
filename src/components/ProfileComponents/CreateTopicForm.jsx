@@ -65,7 +65,7 @@ const CreateTopicForm = () => {
 
             <p className="text-gray-600 text-xs italic mt-2">
               * Please create topics that follow our{" "}
-              <Link to="/profile" className="text-blue-500">
+              <Link to="/policy-and-guidelines" className="text-blue-500">
                 community guidelines
               </Link>
             </p>

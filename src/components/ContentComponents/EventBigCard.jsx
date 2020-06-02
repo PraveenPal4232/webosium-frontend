@@ -18,7 +18,7 @@ const EventBigCard = (props) => {
           />
           <div className="px-4 py-3">
             <div className="flex item-center">
-              <div className="font-medium text-xl mb-2 cursor-pointer">
+              <div className="font-medium text-xl mb-2 cursor-pointer capitalize">
                 {name}
               </div>
             </div>
