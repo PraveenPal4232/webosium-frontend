@@ -1,9 +1,12 @@
 import React, { useEffect } from "react";
 import TagList from "./TagList";
+import ReactGa from "react-ga";
 
 const TagsPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    ReactGa.pageview("/tags");
+
     // eslint-disable-next-line
   }, []);
 

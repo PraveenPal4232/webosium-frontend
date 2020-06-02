@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import dateFormat from "dateformat";
 import { Helmet } from "react-helmet";
+import ReactGa from "react-ga";
 
 import { fetchPublicEventDetails } from "../../services/eventsService";
 
@@ -13,6 +14,9 @@ const EventsDetailPage = () => {
   const [event, setEvent] = useState(null);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+    ReactGa.pageview(`/event/${id}`);
+
     const fetchData = async () => {
       const data = await fetchPublicEventDetails(id);
       setEvent(data);

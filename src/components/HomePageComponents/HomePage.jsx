@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
+import ReactGa from "react-ga";
 
 import { useStoreActions, useStoreState } from "easy-peasy";
 import { fetchPublicEvents } from "../../services/eventsService";
@@ -13,6 +14,8 @@ const HomePage = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    ReactGa.pageview("/");
+    
     const fetchData = async () => {
       const events = await fetchPublicEvents();
       setEvents(events);

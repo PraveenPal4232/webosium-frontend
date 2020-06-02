@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Route } from "react-router-dom";
+import ReactGa from "react-ga";
 
 import ActionButtons from "./ActionButtons";
 import CreateEventForm from "./CreateEventForm";
@@ -9,6 +10,8 @@ import CreateTopicForm from "./CreateTopicForm";
 const ProfilePage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    ReactGa.pageview("/profile");
+    
     // eslint-disable-next-line
   }, []);
 

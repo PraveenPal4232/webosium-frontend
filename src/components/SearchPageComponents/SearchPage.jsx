@@ -6,6 +6,7 @@ import {
   fetchPublicEventsByTags,
   fetchPublicEventsByTitle,
 } from "../../services/eventsService";
+import ReactGa from "react-ga";
 
 const useQuery = () => {
   return new URLSearchParams(useLocation().search);
@@ -17,6 +18,8 @@ const SearchPage = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    ReactGa.pageview("/search");
+
     // eslint-disable-next-line
   }, []);
 

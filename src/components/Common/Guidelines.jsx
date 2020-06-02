@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
+import ReactGa from "react-ga";
 
 const Guidelines = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    ReactGa.pageview("/guidelines");
+
+    // eslint-disable-next-line
+  }, []);
+
   return (
     <div className="p-4 max-w-xl">
       <h1 className="text-3xl">Community Guidelines</h1>
