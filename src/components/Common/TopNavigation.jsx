@@ -21,8 +21,8 @@ const SvgIcon = () => {
           y2="100%"
           id="linearGradient-1"
         >
-          <stop stop-color="#00A7BC" offset="0%"></stop>
-          <stop stop-color="#00BDBA" offset="100%"></stop>
+          <stop stopColor="#00A7BC" offset="0%"></stop>
+          <stop stopColor="#00BDBA" offset="100%"></stop>
         </linearGradient>
         <linearGradient
           x1="50%"
@@ -31,24 +31,24 @@ const SvgIcon = () => {
           y2="100%"
           id="linearGradient-2"
         >
-          <stop stop-color="#00A7BC" offset="0%"></stop>
-          <stop stop-color="#00BDBA" offset="100%"></stop>
+          <stop stopColor="#00A7BC" offset="0%"></stop>
+          <stop stopColor="#00BDBA" offset="100%"></stop>
         </linearGradient>
       </defs>
       <g
         id="Mobile-Application"
         stroke="none"
-        stroke-width="1"
+        strokeWidth="1"
         fill="none"
-        fill-rule="evenodd"
+        fillRule="evenodd"
       >
         <g id="Group-41" transform="translate(1.000000, 29.000000)">
           <g
             id="Group-40"
             transform="translate(28.969482, 0.000000)"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="57"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="57"
           >
             <path
               d="M254,-3.0127012e-12 L254,154 C250.923074,206.875773 228.987176,233.42805 188.192305,233.65683 C147.397435,233.88561 127.116038,207.333333 127.348113,154"
@@ -66,7 +66,7 @@ const SvgIcon = () => {
             d="M22.0725,66.6114458 L22.0725,91.7513633 C22.0725,93.6684033 24.1306567,94.8331872 25.715674,93.789735 L44.9724507,81.2197762 C46.4391831,80.2733894 46.4391831,78.0894197 44.9724507,77.1187665 L25.715674,64.5730741 C24.1306567,63.5296219 22.0725,64.6944057 22.0725,66.6114458 Z"
             id="Path"
             fill="#FFFFFF"
-            fill-rule="nonzero"
+            fillRule="nonzero"
           ></path>
         </g>
       </g>
