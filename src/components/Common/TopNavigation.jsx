@@ -51,7 +51,7 @@ const TopNavigation = () => {
         <a href="/" className="block">
           <SvgIcon />
         </a>
-        <h5 className="text-2xl">webinars.io</h5>
+        <h5 className="text-2xl">webosium</h5>
       </div>
       <div>
         <GoogleLogin
