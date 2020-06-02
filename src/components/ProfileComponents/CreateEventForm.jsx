@@ -214,7 +214,7 @@ const CreateEventForm = () => {
 
             <p className="text-gray-600 text-xs italic mt-2">
               * Your event will be approved only if it follows{" "}
-              <Link to="/profile" className="text-blue-500">
+              <Link to="/policy-and-guidelines" className="text-blue-500">
                 community guidelines
               </Link>
             </p>

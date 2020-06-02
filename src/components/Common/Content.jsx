@@ -9,6 +9,7 @@ import EventsDetailPage from "../SingleEventComponents/EventDetailsPage";
 import HomePage from "../HomePageComponents/HomePage";
 import AllEventsEver from "../ContentComponents/AllEventsEver";
 import { useStoreState } from "easy-peasy";
+import Guidelines from "./Guidelines";
 
 const Content = () => {
   const signedIn = useStoreState((state) => state.isLoggedIn);
@@ -18,6 +19,7 @@ const Content = () => {
       <Route exact path="/all" component={AllEventsEver} />
       <Route exact path="/topics" component={TagsPage} />
       <Route exact path="/search" component={SearchPage} />
+      <Route exact path="/policy-and-guidelines" component={Guidelines} />
       <Route
         path="/profile/:action"
         component={signedIn ? ProfilePage : Unsigned}
