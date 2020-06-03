@@ -10,7 +10,7 @@ const EventBigCard = (props) => {
   return (
     <div className="md:w-1/4 w-full mb-4 md:mr-2 md:inline-block md:flex-none">
       <Link to={`/event/${id}`}>
-        <div className="rounded overflow-hidden shadow-md hover:shadow-lg cursor-pointer">
+        <div className="rounded overflow-hidden shadow-md hover:shadow-lg h-full cursor-pointer">
           <img
             className="w-full md:h-48 h-56 object-cover"
             src={image}

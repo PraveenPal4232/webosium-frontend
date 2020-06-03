@@ -15,7 +15,7 @@ const HomePage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     ReactGa.pageview("/");
-    
+
     const fetchData = async () => {
       const events = await fetchPublicEvents();
       setEvents(events);
@@ -35,11 +35,21 @@ const HomePage = () => {
 
           { name: "twitter:site", content: "webosium" },
           { name: "twitter:creator", content: "webosium" },
+          {
+            name: "twitter:image",
+            content: process.env.PUBLIC_URL + "/logo192.png",
+          },
+          { name: "twitter:title", content: "Symposium on the web" },
+          { property: "og:description", content: "Find and create webinars" },
 
           { property: "og:site_name", content: "webosium" },
           { property: "og:type", content: "website" },
 
           { property: "og:site_name", content: "webosium" },
+          {
+            property: "og:image",
+            content: process.env.PUBLIC_URL + "/logo192.png",
+          },
         ]}
       />
       <UpcomingEvents />

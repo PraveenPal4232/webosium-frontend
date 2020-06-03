@@ -2,6 +2,7 @@ import React from "react";
 import { GoogleLogin } from "react-google-login";
 import { useStoreActions, useStoreState } from "easy-peasy";
 import { exchangeGoogleAccessToken } from "../../services/userService";
+import { Link } from "react-router-dom";
 
 const SvgIcon = () => {
   return (
@@ -98,9 +99,9 @@ const TopNavigation = () => {
   return (
     <div className="flex items-center pl-6 pr-6 w-full bg-white border-b border-gray-200 fixed top-0 inset-x-0 z-100 h-16">
       <div className="flex-1 flex">
-        <a href="/" className="block">
+        <Link to="/" className="block">
           <SvgIcon />
-        </a>
+        </Link>
         <h5 className="text-2xl">webosium</h5>
       </div>
       <div>
