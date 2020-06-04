@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Linkify from "react-linkify";
 import dateFormat from "dateformat";
 import { Helmet } from "react-helmet";
 import ReactGa from "react-ga";
@@ -39,6 +40,7 @@ const EventsDetailPage = () => {
             { name: "twitter:creator", content: "webosium" },
             { name: "twitter:title", content: name },
             { name: "twitter:image", content: image },
+            { name: "twitter:card", content: description },
 
             { property: "og:title", content: name },
             { property: "og:site_name", content: "webosium" },
@@ -90,7 +92,9 @@ const EventsDetailPage = () => {
             <h1 className="text-xl uppercase tracking-widest mb-4">
               Description
             </h1>
-            <p className="whitespace-pre-wrap">{description}</p>
+            <p className="whitespace-pre-wrap">
+              <Linkify className="">{description}</Linkify>
+            </p>
           </div>
         </div>
         <div className="md:hidden mt-8">
