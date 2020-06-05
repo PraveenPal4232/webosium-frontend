@@ -40,7 +40,7 @@ const EventsDetailPage = () => {
             { name: "twitter:creator", content: "webosium" },
             { name: "twitter:title", content: name },
             { name: "twitter:image", content: image },
-            { name: "twitter:card", content: description },
+            { name: "twitter:card", content: "summary" },
 
             { property: "og:title", content: name },
             { property: "og:site_name", content: "webosium" },
