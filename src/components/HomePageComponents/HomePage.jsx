@@ -35,7 +35,7 @@ const HomePage = () => {
 
           { name: "twitter:site", content: "webosium" },
           { name: "twitter:creator", content: "webosium" },
-          { name: "twitter:card", content: "summary" },
+          { name: "twitter:card", content: "summary_large_image" },
           {
             name: "twitter:image",
             content: process.env.PUBLIC_URL + "/logo192.png",
