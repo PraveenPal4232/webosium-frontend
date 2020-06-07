@@ -7,7 +7,9 @@ import { Link } from "react-router-dom";
 const UpcomingEvents = () => {
   const events = useStoreState((state) => state.events.allEvents);
   const upcoming = events.filter((event) => {
-    return Date.parse(event.date) >= new Date();
+    let myDate = new Date();
+    myDate.setHours(myDate.getHours() - 4);
+    return Date.parse(event.date) >= myDate;
   });
 
   return (

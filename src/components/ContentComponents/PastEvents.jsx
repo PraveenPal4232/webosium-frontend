@@ -7,7 +7,9 @@ import EventSmallCard from "./EventSmallCard";
 const PastEvents = () => {
   const events = useStoreState((state) => state.events.allEvents);
   const past = events.filter((event) => {
-    return Date.parse(event.date) < new Date();
+    let myDate = new Date();
+    myDate.setHours(myDate.getHours() - 4);
+    return Date.parse(event.date) < myDate;
   });
 
   return (
@@ -15,7 +17,7 @@ const PastEvents = () => {
       <h1 className="text-2xl uppercase mb-4">Past Events</h1>
       <div className="grid lg:grid-cols-4 md:grid-cols-2">
         {past.length === 0 ? "No Past Events" : null}
-        {past.map((event, index) => {
+        {past.reverse().map((event, index) => {
           return <EventSmallCard event={event} key={index} />;
         })}
       </div>
